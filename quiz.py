@@ -27,7 +27,7 @@ st.title("Quiz App")
 # Display each question and options for user selection
 for i, question in enumerate(questions):
     st.subheader(f"Q{i + 1}: {question}")
-    selected_option = st.radio("Choose an option", options[i])
+    selected_option = st.radio("Choose an option", options[i], None)
     user_responses.append(selected_option)
 
 # Submit button to calculate score and display correct answers
